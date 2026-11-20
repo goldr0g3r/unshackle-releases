@@ -15,11 +15,16 @@ This repository only hosts release files. Each release has:
 
 ## Verify before installing
 
-Every release is signed with the same key. Its certificate SHA-256 digest is:
+Every release from v0.1.0-rc.14 on is signed with the same key. Its certificate SHA-256 digest
+is:
 
 ```
-2b3c50f33d7a653dcac153d0c814eb672335bcb32fdc7f9fb72c6976fd57a6e1
+14f2cc7fa3b1163341cb802202891ee7660f424716f70bb8594f8feb5523d9a6
 ```
+
+Releases up to v0.1.0-rc.13 were signed with an earlier key, which was lost:
+`2b3c50f33d7a653dcac153d0c814eb672335bcb32fdc7f9fb72c6976fd57a6e1`. A phone on one of them can't
+update to rc.14 or later by itself; the rc.14 notes say how to set it up again.
 
 ```bash
 sha256sum -c unshackle-vX.Y.Z.apk.sha256
